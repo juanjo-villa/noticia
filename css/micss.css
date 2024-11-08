@@ -1,0 +1,224 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#contenedor {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+/* Estilo para la cabecera */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #333;
+}
+
+.barmenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu:hover {
+    background-color: #555;
+}
+
+/* Estilos para la sección del contenido */
+#contenido {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.noticia {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.noticia:hover {
+    transform: translateY(-5px);
+}
+
+.noticia img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.noticia a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.noticia a:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Estilos para los posts */
+.post {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.post h5 {
+    color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contenido {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+/* Estilo para los botones de like, dislike y eliminar */
+.bi {
+    font-size: 1.5rem;
+    transition: transform 0.2s ease;
+}
+
+.bi:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.6);
+}
+
+/* Estilos para los botones */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #3e8e41;
+    transform: translateY(1px);
+}
+
+/* Estilos específicos para los botones de agregar noticia */
+button.btn-primary {
+    background-color: #1a73e8;
+    padding: 10px 25px;
+}
+
+button.btn-primary:hover {
+    background-color: #1765c1;
+}
+
+/* Estilos para los botones de like, dislike, eliminar */
+button i {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+button i:hover {
+    color: #4CAF50;
+}
+
+/* Estilos para el contenedor de noticias agregadas */
+#noticias .noticia {
+    margin-top: 20px;
+}
+
+/* Estilos para el contenedor del formulario */
+.input-group {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
